@@ -1,0 +1,7 @@
+account,region,stage,deal_value,days_open,owner
+Northwind,West,Qualified,12000,14,Ava
+Bluebird,East,Proposal,28500,22,Mika
+Atlas,West,Negotiation,41000,31,Ava
+Lattice,South,Qualified,9700,11,Noah
+Cascade,East,Closed Won,52000,45,Mika
+Harbor,Central,Proposal,18000,19,Noah

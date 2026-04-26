@@ -1,0 +1,37 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    working_dir: /app
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend/app:/app/app
+      - ./backend/tests:/app/tests
+      - ./backend/data:/app/data
+      - ./backend/requirements.txt:/app/requirements.txt
+    environment:
+      - LLM_PROVIDER=${LLM_PROVIDER:-gemini}
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - USE_MOCK_AGENTS=${USE_MOCK_AGENTS:-true}
+
+  frontend:
+    build:
+      context: ./frontend
+    working_dir: /app
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend/src:/app/src
+      - ./frontend/public:/app/public
+      - ./frontend/package.json:/app/package.json
+      - ./frontend/next.config.ts:/app/next.config.ts
+      - ./frontend/postcss.config.js:/app/postcss.config.js
+      - ./frontend/tailwind.config.ts:/app/tailwind.config.ts
+      - ./frontend/tsconfig.json:/app/tsconfig.json
+      - ./frontend/next-env.d.ts:/app/next-env.d.ts
+    environment:
+      - NEXT_PUBLIC_API_BASE_URL=${NEXT_PUBLIC_API_BASE_URL:-http://localhost:8000/api}
+    depends_on:
+      - backend

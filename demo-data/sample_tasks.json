@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Research Brief",
+    "task_type": "research",
+    "prompt": "Research multi-agent orchestration patterns and summarize the strongest ideas for an Agent OS MVP.",
+    "context_text": "Prioritize shared memory, supervisor routing, explicit permissions, and visible execution traces. Keep recommendations portfolio-friendly."
+  },
+  {
+    "name": "Project Plan",
+    "task_type": "planning",
+    "prompt": "Plan a 2-week implementation roadmap for an internal AI analyst platform with a small product team.",
+    "context_text": "Assume two engineers and one designer. Include milestones, risks, and a task checklist that can be executed immediately."
+  },
+  {
+    "name": "CSV Analysis",
+    "task_type": "data",
+    "prompt": "Analyze this CSV and recommend the most important operational next steps.",
+    "context_text": "Focus on basic profiling, data quality risks, and practical follow-up analysis. Pair with demo-data/sales_pipeline.csv."
+  }
+]

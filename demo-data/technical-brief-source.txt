@@ -1,0 +1,3 @@
+Agent OS should feel like an operating system for specialized AI workers rather than a single assistant.
+The system needs shared memory, explicit permissions, workflow visibility, and modular agents that can be extended later.
+Portfolio value comes from showing thoughtful architecture, strong product framing, and believable execution logs.
