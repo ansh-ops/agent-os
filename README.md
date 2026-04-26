@@ -313,8 +313,4 @@ Examples:
 
 The value is that AI work becomes structured, permissioned, inspectable, and repeatable.
 
-## Portfolio Summary
 
-Agent OS demonstrates full-stack AI product engineering: backend architecture, multi-agent system design, typed contracts, document ingestion, permission-aware tools, model provider abstraction, workflow state, execution traces, and a polished dashboard for inspecting AI work.
-
-It is built to show how agentic systems can move from one-off prompt responses toward real workflow infrastructure.
